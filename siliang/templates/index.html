@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %} 四两 {% endblock %}
+
+{% block page_content %}
+    <div class="page-header">
+        <h1>小工具，四两拨千斤！</h1>
+        <p>你好,{% if current_user.is_authenticated %}{{ current_user.email }}{% else %}陌生人！{% endif %}</p>
+    </div>
+{% endblock %}
